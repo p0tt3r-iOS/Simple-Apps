@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IAmDev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dev" translatesAutoresizingMaskIntoConstraints="NO" id="DPC-R4-DgR">
+                                <rect key="frame" x="40" y="286" width="334" height="324"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DPC-R4-DgR" secondAttribute="height" multiplier="228:221" id="n9z-2Z-ruf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am a Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vn5-B7-a1G">
+                                <rect key="frame" x="46.5" y="154" width="321.5" height="52"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.14556465739999999" green="0.095685637749999997" blue="0.443477438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DPC-R4-DgR" firstAttribute="top" secondItem="Vn5-B7-a1G" secondAttribute="bottom" constant="80" id="AoH-KG-Lxh"/>
+                            <constraint firstItem="DPC-R4-DgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gw7-9N-yd1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vn5-B7-a1G" secondAttribute="trailing" constant="16" id="IXv-r9-rJY"/>
+                            <constraint firstItem="DPC-R4-DgR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="PP2-zt-HKQ"/>
+                            <constraint firstItem="Vn5-B7-a1G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hIk-mX-7oc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DPC-R4-DgR" secondAttribute="trailing" constant="40" id="lyV-Gs-BOs"/>
+                            <constraint firstItem="DPC-R4-DgR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mt2-4n-6UU"/>
+                            <constraint firstItem="Vn5-B7-a1G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xtm-j9-k56"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dev" width="114" height="110.5"/>
+    </resources>
+</document>
