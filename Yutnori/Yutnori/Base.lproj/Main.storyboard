@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Yutnori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeongSeok" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-ex-bMa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="윷 놀 이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYy-xs-bnI">
+                                <rect key="frame" x="147" y="204" width="120.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="b0x-Fg-NXM">
+                                <rect key="frame" x="56" y="388" width="302" height="364"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yut" translatesAutoresizingMaskIntoConstraints="NO" id="bn2-TT-w8Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="364"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yut" translatesAutoresizingMaskIntoConstraints="NO" id="sVE-tO-GEj">
+                                        <rect key="frame" x="81" y="0.0" width="59.5" height="364"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yut" translatesAutoresizingMaskIntoConstraints="NO" id="vEV-t4-ZqN">
+                                        <rect key="frame" x="161.5" y="0.0" width="60" height="364"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yut" translatesAutoresizingMaskIntoConstraints="NO" id="qqm-Fl-ppu">
+                                        <rect key="frame" x="242.5" y="0.0" width="59.5" height="364"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b0x-Fg-NXM" secondAttribute="height" multiplier="151:182" id="Sfj-VB-tkI"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="윷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDS-ua-Ihj">
+                                <rect key="frame" x="194" y="312" width="26" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxj-ae-mPf">
+                                <rect key="frame" x="175" y="784" width="64" height="46"/>
+                                <color key="backgroundColor" red="0.30203226309999998" green="0.62801563500000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="TcQ-yh-mSd"/>
+                                    <constraint firstAttribute="width" constant="64" id="vgc-jp-RDU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="던지기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="throwButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63a-Uh-uUz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b0x-Fg-NXM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="2l0-kt-v0G"/>
+                            <constraint firstItem="h9y-ex-bMa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3ey-vb-Vl7"/>
+                            <constraint firstItem="JYy-xs-bnI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="4sH-n6-dBb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mxj-ae-mPf" secondAttribute="bottom" constant="32" id="AVF-ed-NEH"/>
+                            <constraint firstItem="b0x-Fg-NXM" firstAttribute="top" secondItem="DDS-ua-Ihj" secondAttribute="bottom" constant="40" id="Eto-Sc-3QQ"/>
+                            <constraint firstItem="DDS-ua-Ihj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H9N-ru-c7h"/>
+                            <constraint firstAttribute="trailing" secondItem="b0x-Fg-NXM" secondAttribute="trailing" constant="56" id="S8o-he-SZN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9y-ex-bMa" secondAttribute="trailing" id="VzH-bi-nvE"/>
+                            <constraint firstItem="mxj-ae-mPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YoO-uk-wMV"/>
+                            <constraint firstItem="mxj-ae-mPf" firstAttribute="top" secondItem="b0x-Fg-NXM" secondAttribute="bottom" constant="32" id="g4y-cU-mEp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h9y-ex-bMa" secondAttribute="bottom" id="i63-FH-mio"/>
+                            <constraint firstItem="JYy-xs-bnI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qkh-Qd-8wf"/>
+                            <constraint firstItem="h9y-ex-bMa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xzw-5q-CDP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="YutFirst" destination="bn2-TT-w8Y" id="LOQ-mT-YjH"/>
+                        <outlet property="YutFourth" destination="qqm-Fl-ppu" id="Pau-Xb-7TN"/>
+                        <outlet property="YutSecond" destination="sVE-tO-GEj" id="SNj-EF-72C"/>
+                        <outlet property="YutTextField" destination="DDS-ua-Ihj" id="oOc-Oe-HKi"/>
+                        <outlet property="YutThird" destination="vEV-t4-ZqN" id="Qeu-gF-ffU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MeongSeok" width="147" height="93.5"/>
+        <image name="Yut" width="147" height="886"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
